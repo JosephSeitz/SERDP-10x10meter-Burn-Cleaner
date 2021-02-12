@@ -467,8 +467,8 @@ def saver(all_sonics, all_tc_group, df_WGNover, Burn, save_loc ="", \
     save_dir = "Burn-"+str(Burn).zfill(2)+tsp
     os.mkdir(cwd+"/" + save_dir)
     
-    tc_dir =cwd+"/" + save_dir + "/thermal_couples"+tsp
-    sonic_dir =cwd+"/" + save_dir + "/sonics"+tsp
+    tc_dir =cwd+"/" + save_dir + "/Thermalcouples"+tsp
+    sonic_dir =cwd+"/" + save_dir + "/Sonics"+tsp
     
     os.mkdir(tc_dir)
     os.mkdir(sonic_dir)
