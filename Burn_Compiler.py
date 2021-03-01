@@ -100,7 +100,7 @@ def master(base_path, Burn, save_loc,seperator,file_type, mk_contins, sep_time_c
                    B_dict[Burn][0], B_dict[Burn][1], fill_nan, mk_contins, \
                        sep_time_cols) 
     
-    if Burn >=8 or Burn <=13:
+    if Burn >=9 and Burn <=13:
         all_sonics, all_tc_group, df_WGNover = compiler9_13(burn_path, Burn, \
                    B_dict[Burn][0], B_dict[Burn][1], fill_nan, mk_contins, \
                        sep_time_cols) 
