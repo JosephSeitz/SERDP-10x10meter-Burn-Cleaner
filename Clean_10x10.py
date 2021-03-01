@@ -13,8 +13,8 @@ Created: January 2021
 ### download the raw dataloggers, the program will run quicker on local 
 ### machines, change the path below 
 
-base_path = "http://35.12.130.8/study/Seitz/" + \
-    "10X10_Truss_SERDP_Burns/Raw-Sonic-TC-Data/SERDP-Burn"
+base_path = "http://35.12.130.8/study/SERDP-10x10m-Data/Raw-Sonic-TC-Data/"+ \
+        "SERDP-Burn"
 
 ### Example of a local directory
 #base_path = "/Users/joeyp/OneDrive/SERDP/10X10_Truss_SERDP_Burns/"+ \
@@ -43,13 +43,14 @@ seperator = " "
 ''' Data Structure Inputs'''
 ### Below is the list of the burn aviable to clean in the current state of code
 ### Note Burns 9-13 are currently missing due to metadata conflicts (int)
-burn_num_lst = [1, 2, 3, 4, 5, 6, 7, 8, 18, 19, 20, 21, 22, 23,\
+burn_num_lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 18, 19, 20, 21, 22, 23,\
                24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 
 ## NOTE: Burn #'s 10, 14, 15, 16, 17 don't have data
 ### If less burns are desired comment out the list above and add the burn 
 ### Numbers to the list here
-#burn_num_lst = [1]
+#burn_num_lst = [1, 2, 3, 4, 5, 6, 18, 19, 20, 21, 22, 23,\
+#               24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 
 '''Making Data Continuous'''
 ### If the user does not want gaps in the data, set mk_contins = "y", to 
@@ -128,7 +129,7 @@ diag_check = "y"
 
 fmt = "Corrections to be Applied \n" + \
     "{}*U, {}*V, {}*W (No Change),\n" + \
-    "Max Wind Speed=|{}| m/s, Max Sonic Temperature {}C \n" + \
+    "Max Wind Speed = |{}| m/s, Max Sonic Temperature = {}C \n" + \
     "Min Sonic Temperature = {} C, Min TC Temperature = {}C\n" + \
     "Max TC Temperature = {}C (no check = 10E6)" 
 if mk_corcts == "y":

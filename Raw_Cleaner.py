@@ -183,18 +183,11 @@ def  initializing_df():
     t_c_lst_2 = ["Temp_C(8)", "Temp_C(9)", "Temp_C(10)", "Temp_C(11)",\
                  "Temp_C(12)", "Temp_C(13)", "Temp_C(14)"]
     
-        ### Dataframe set up
-    df_A1, df_A2, df_A3, df_A4 = pd.DataFrame(),pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
-    df_B1, df_B2, df_B3, df_B4 = pd.DataFrame(),pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
-    df_C1, df_C2, df_C3, df_C4 = pd.DataFrame(),pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
-    df_D1, df_D2, df_D3, df_D4 = pd.DataFrame(),pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
-    
-    a_row_lst = [df_A1, df_A2, df_A3, df_A4]
-    b_row_lst = [df_B1, df_B2, df_B3, df_B4]
-    c_row_lst = [df_C1, df_C2, df_C3, df_C4]
-    d_row_lst = [df_D1, df_D2, df_D3, df_D4 ]
-    
-    all_sonics = a_row_lst+ b_row_lst + c_row_lst +d_row_lst
+    ### Dataframe set up
+    a_row_lst = [pd.DataFrame() for i in range(4)]
+    b_row_lst = [pd.DataFrame() for i in range(4)]
+    c_row_lst = [pd.DataFrame() for i in range(4)]
+    d_row_lst = [pd.DataFrame() for i in range(4)]
     
     df_B1_tc, df_B2_tc, df_B3_tc, df_B4_tc = pd.DataFrame(),pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
     df_C1_tc, df_C2_tc, df_C3_tc, df_C4_tc = pd.DataFrame(),pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
@@ -202,7 +195,7 @@ def  initializing_df():
 
     
     return sonic_columns, time_columns_lst, a_row_lst, b_row_lst, c_row_lst, \
-        d_row_lst, sonc_headers, all_sonics, df_B1_tc, df_B2_tc, df_B3_tc, \
+        d_row_lst, sonc_headers, df_B1_tc, df_B2_tc, df_B3_tc, \
         df_B4_tc, df_C1_tc, df_C2_tc, df_C3_tc, df_C4_tc, t_c_lst_out, \
         t_c_lst_1, t_c_lst_2
 
