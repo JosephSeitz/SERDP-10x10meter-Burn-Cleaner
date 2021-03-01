@@ -13,12 +13,12 @@ Created: January 2021
 ### download the raw dataloggers, the program will run quicker on local 
 ### machines, change the path below 
 
-#base_path = "http://35.12.130.8/study/SERDP-10x10m-Data/Raw-Sonic-TC-Data/"+ \
-#        "SERDP-Burn"
+base_path = "http://35.12.130.8/study/SERDP-10x10m-Data/Raw-Sonic-TC-Data/"+ \
+        "SERDP-Burn"
 
 ### Example of a local directory
-base_path = "/Users/joeyp/OneDrive/SERDP/10X10_Truss_SERDP_Burns/"+ \
-                   "Raw-Sonic-TC-Data/SERDP-Burn"
+#base_path = "/Users/joeyp/OneDrive/SERDP/10X10_Truss_SERDP_Burns/"+ \
+#                   "Raw-Sonic-TC-Data/SERDP-Burn"
 
 '''Save Attributes'''
 ### The default saving location is the current working directory, if you would 
